@@ -20,7 +20,7 @@ class PrimesIsolatedCheck extends Component {
   _handleSubmit(e){
     e.preventDefault();
     const {number} = this.state;
-    const url = `http://localhost:2357/primes_is_isolated?pCheck=${number}`;
+    const url = `https://prime-numbers-api-server.herokuapp.com/primes_is_isolated?pCheck=${number}`;
     axios(url).then( (data) => {
       this.setState({ result: data.data });
     })
@@ -48,7 +48,7 @@ class PrimesIsolatedCheck extends Component {
         <p className='specificP'> if you want to use this api option, to find if a
           number is isolated prime or not, use the below url:
           <p style={{color:'rgba(0,0,255,0.7)',fontStyle:'italic'}}>
-            {"http://localhost:2357/primes_is_isolated?pCheck=<number>"}
+            {"https://prime-numbers-api-server.herokuapp.com/primes_is_isolated?pCheck=<number>"}
           </p>
           <p>and then just change the {"<number>"} to your number or variable.</p>
         </p>

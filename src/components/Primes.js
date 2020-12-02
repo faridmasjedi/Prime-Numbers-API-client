@@ -24,7 +24,7 @@ class Primes extends Component{
   _handleSubmit(e){
     e.preventDefault();
     const {number} = this.state;
-    const url = `http://localhost:2357/prime?pCheck=${number}`
+    const url = `https://prime-numbers-api-server.herokuapp.com/prime?pCheck=${number}`
     axios(url).then((data)=>{
       this.setState({ array: [data.data.isPrime, data.data.divisions, data.data.Primes[0],data.data.Primes[1]],
                       isLoaded: true
@@ -87,7 +87,7 @@ class Primes extends Component{
           number is prime or not, what are the divisions of this number and
           what are the primes before this number, use the below url:
           <p style={{color:'rgba(0,0,255,0.7)',fontStyle:'italic'}}>
-            {"http://localhost:2357/prime?pCheck=<number>"}
+            {"https://prime-numbers-api-server.herokuapp.com/prime?pCheck=<number>"}
           </p>
           <p>and then just change the {"<number>"} to your number or variable.</p>
         </p>

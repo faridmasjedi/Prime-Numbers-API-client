@@ -22,7 +22,7 @@ class PrimesTwinCheck extends Component {
   _handleSubmit(e){
     e.preventDefault();
     const {number} = this.state;
-    const url = `http://localhost:2357/primes_has_twin?pCheck=${number}`;
+    const url = `https://prime-numbers-api-server.herokuapp.com/primes_has_twin?pCheck=${number}`;
     axios(url).then( (data) => {
       this.setState({ result: data.data });
     })
@@ -87,7 +87,7 @@ class PrimesTwinCheck extends Component {
         <p className='specificP'> if you want to use this api option, to find out
           whether a prime number has a twin or not, use the below url:
           <p style={{color:'rgba(0,0,255,0.7)',fontStyle:'italic'}}>
-            {"http://localhost:2357/primes_has_twin?pCheck=<number>"}
+            {"https://prime-numbers-api-server.herokuapp.com/primes_has_twin?pCheck=<number>"}
           </p>
           <p>and then just change the {"<number>"} to your number or variable.</p>
         </p>

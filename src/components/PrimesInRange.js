@@ -29,7 +29,7 @@ class PrimesInRange extends Component {
   _handleSubmit(e){
     e.preventDefault();
     const {rangeStart,rangeEnd} = this.state;
-    const url = `http://localhost:2357/primes_in_bound?rangeS=${rangeStart}&rangeE=${rangeEnd}`;
+    const url = `https://prime-numbers-api-server.herokuapp.com/primes_in_bound?rangeS=${rangeStart}&rangeE=${rangeEnd}`;
     axios(url).then( (data) => {
       this.setState({ result: data.data });
     })
@@ -68,7 +68,7 @@ class PrimesInRange extends Component {
         <p className='specificP'> if you want to use this api option, to find out
           what are the primes before a number, use the below url:
           <p style={{color:'rgba(0,0,255,0.7)',fontStyle:'italic'}}>
-            {"http://localhost:2357/primes_in_bound?rangeS=<start>&rangeE=<end>"}
+            {"https://prime-numbers-api-server.herokuapp.com/primes_in_bound?rangeS=<start>&rangeE=<end>"}
           </p>
           <p>and then just change the {"<start> and <end>"} to your variables.</p>
         </p>

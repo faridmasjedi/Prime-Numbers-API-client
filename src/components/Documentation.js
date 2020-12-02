@@ -15,7 +15,7 @@ function Documentation() {
           number with amount of it's power), check if it is a prime number or not, and will
           give the primes up to a number.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/prime?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/prime?pCheck=<number>"}</span></p>
         <Link to="/primes">Link to " Number " Page</Link><br/><br/>
         <hr/>
 
@@ -23,7 +23,7 @@ function Documentation() {
         <p className='specificP'>If a number has two factors, itself and 1, then it
           is a prime number.<br/><br/>This option will check if a number is prime number or not.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primeCheck?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primeCheck?pCheck=<number>"}</span></p>
         <Link to="/primeCheck">Link to " Prime Check " Page</Link><br/><br/>
         <hr/>
 
@@ -32,7 +32,7 @@ function Documentation() {
           itself and 1, then it is a prime number.<br/><br/>This option will give the prime factors
           of a number (with output of a prime number with amount of it's power).
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primeDivisions?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primeDivisions?pCheck=<number>"}</span></p>
         <Link to="/factors">Link to " Factors " Page</Link><br/><br/>
         <hr/>
 
@@ -41,7 +41,7 @@ function Documentation() {
           1.<br/><br/>This option will give all prime numbers from 1 to the number that has been
           entered.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primes_to_a_number?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primes_to_a_number?pCheck=<number>"}</span></p>
         <Link to="/primes_to_a_number">Link to " Primes to a Number " Page</Link><br/><br/>
         <hr/>
 
@@ -49,7 +49,7 @@ function Documentation() {
         <p className='specificP'>Prime numbers are the numbers with two factors, itself and
           1.<br/><br/>This option will give all prime numbers in a range.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primes_in_bound?rangeS=<start>&rangeE=<end>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primes_in_bound?rangeS=<start>&rangeE=<end>"}</span></p>
         <Link to="/primes_in_range">Link to " Primes in a Range " Page</Link><br/><br/>
         <hr/>
 
@@ -59,7 +59,7 @@ function Documentation() {
           2 × 11 + 1 = 23 is a prime number.<br/><br/>This option will check if a prime
           numbers is Sophie prime or not.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primes_is_suphie?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primes_is_sophie?pCheck=<number>"}</span></p>
         <Link to="/primes_is_sophie">Link to " Sophie Prime " Page</Link><br/><br/>
         <hr/>
 
@@ -69,7 +69,7 @@ function Documentation() {
           form M(p) = 2<sup>p</sup> − 1 for a prime number(p).<br/><br/>This option will check
           if a prime number is Mersenne or not.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primes_is_mersenne?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primes_is_mersenne?pCheck=<number>"}</span></p>
         <Link to="/primes_is_mersenne">Link to " Mersenne Prime " Page</Link><br/><br/>
         <hr/>
 
@@ -81,7 +81,7 @@ function Documentation() {
           an alternative name for this is prime twin or prime pair.<br/><br/>This option
           will check if a prime number is Twin or not.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primes_has_twin?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primes_has_twin?pCheck=<number>"}</span></p>
         <Link to="/primes_has_twin">Link to " Twin Prime " Page</Link><br/><br/>
         <hr/>
 
@@ -92,7 +92,7 @@ function Documentation() {
           isolated prime, since 21 and 25 are both composite.<br/><br/>This option
           will check if a prime number is Isolated or not.
         </p>
-        <p>API Link: <span className='specificSpan'>{"http://localhost:2357/primes_is_isolated?pCheck=<number>"}</span></p>
+        <p>API Link: <span className='specificSpan'>{"https://prime-numbers-api-server.herokuapp.com/primes_is_isolated?pCheck=<number>"}</span></p>
         <Link to="/primes_is_isolated">Link to " Isolated Prime " Page</Link><br/><br/>
         <hr/>
 

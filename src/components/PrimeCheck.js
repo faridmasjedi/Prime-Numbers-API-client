@@ -20,7 +20,7 @@ class PrimeCheck extends Component {
   _handleSubmit(e){
     e.preventDefault();
     const {number} = this.state;
-    const url = `http://localhost:2357/primeCheck?pCheck=${number}`;
+    const url = `https://prime-numbers-api-server.herokuapp.com/primeCheck?pCheck=${number}`;
     axios(url).then( (data) => {
       this.setState({ result: `- Number ${number} is ${data.data}.` });
     })
@@ -48,7 +48,7 @@ class PrimeCheck extends Component {
         <p className='specificP'> if you want to use this api option, to find if a
           number is prime or not, use the below url:
           <p style={{color:'rgba(0,0,255,0.7)',fontStyle:'italic'}}>
-            {"http://localhost:2357/primeCheck?pCheck=<number>"}
+            {"https://prime-numbers-api-server.herokuapp.com/primeCheck?pCheck=<number>"}
           </p>
           <p>and then just change the {"<number>"} to your number or variable.</p>
         </p>

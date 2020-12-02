@@ -22,7 +22,7 @@ class PrimesToANumber extends Component {
   _handleSubmit(e){
     e.preventDefault();
     const {number} = this.state;
-    const url = `http://localhost:2357/primes_to_a_number?pCheck=${number}`;
+    const url = `https://prime-numbers-api-server.herokuapp.com/primes_to_a_number?pCheck=${number}`;
     axios(url).then( (data) => {
       console.log(data.data)
       this.setState({ result: data.data });
@@ -63,7 +63,7 @@ class PrimesToANumber extends Component {
         <p className='specificP'> if you want to use this api option, to find out
           what are the primes before a number, use the below url:
           <p style={{color:'rgba(0,0,255,0.7)',fontStyle:'italic'}}>
-            {"http://localhost:2357/primes_to_a_number?pCheck=<number>"}
+            {"https://prime-numbers-api-server.herokuapp.com/primes_to_a_number?pCheck=<number>"}
           </p>
           <p>and then just change the {"<number>"} to your number or variable.</p>
         </p>
