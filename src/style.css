@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container{
+  max-width: 900px;
+  width:100%;
+  background-color: #ccc;
+  margin: 0 auto;
+  padding:20px;
+  border-radius: 15px;
+}
+
+.calcBody{
+  width: 300px;
+}
+
+.operationsDiv{
+  width:200px;
+  vertical-align: top;
+}
+
+.calcBody, .operationsDiv{
+  display: inline-block;
+}
+
+.numbers, .operations{
+  margin: 5px;
+  text-align: center;
+  width:90px;
+  border-radius: 15px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.numbers:hover{
+  background-color: #ccc;
+}
+
+.operations:hover{
+  background-color: rgba(0,0,255,0.5);
+}
+
+.calcOperation{
+  width:200px;
+  height:30px;
+  border:2px solid black;
+}
+
+.resultOperation{
+  width:200px;
+  height:30px;
+  border:2px solid black;
+  margin-left:5px;
+}
+.calcOperation, .resultOperation{
+  display:inline-block;
+  vertical-align: top;
+}
+
+.resultButton{
+  background-color: rgba(0,0,200,0.8)
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:rgba(0,0,255,0.5);
+  text-decoration: underline;
+}
+pre{
+  font-family: sans-serif;
+  color: #000;
+  background-color: #f8f9fa;
+  border: 1px solid #eaecf0;
+  padding: 1em;
+  white-space: pre-wrap;
+  overflow-x: hidden;
+}
+.specificP{
+  color:#666;
+}
+.specificSpan{
+  color: #00b;
+}
+.historyImg{
+  float:right;
+}
+.divisionsResult{
+  display:inline-block;
+  border:1px solid rgba(0, 0, 0, 0.5);
+  margin: 2px;
+  padding:2px;
+}
+
+
+.polarPlot, .trigonometry{
+  display:inline-block;
+}
+
+.divisions, .primes{
+  display: inline-block;
+  margin:2px;
+  padding:1px;
+  border:1px solid black;
+  color: rgba(0,0,255,0.5);
+  min-width:10%;
+  text-align: center;
+}
+.diff{
+  color:rgba(0,150,100,1);
+}
+.not-prime{
+  color:rgba(255,0,0,1)
+}
+table{
+  text-align: center;
+}
+td{
+  border:1px solid black;
+  background:yellow;
+}

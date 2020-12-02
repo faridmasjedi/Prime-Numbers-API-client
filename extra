@@ -1,0 +1,15 @@
+<Link to="/primes">Primes</Link> |&nbsp;
+<Link to="/primeCheck">Prime Check</Link> |&nbsp;
+<Link to="/factors">Factors</Link> |&nbsp;
+<Link to="/primes_to_a_number">Primes to a Number</Link> |&nbsp;
+<Link to="/primes_in_range">Primes In a Range</Link> |&nbsp;
+<Link to="/primes_is_sophie">Primes Sophie check</Link> |&nbsp;
+<Link to="/primes_is_mersenne">Primes Mersenne check</Link> |&nbsp;
+<Link to="/primes_has_twin">Twin Primes </Link> |&nbsp;
+<Link to="/primes_is_isolated">Isolated Primes </Link> |&nbsp;
+
+<Link to="/simpleCalc">Simple Calculator</Link> |&nbsp;
+<Link to="/advancedCalc">Advanced Calculator</Link> |&nbsp;
+<Link to="/graph">Graph</Link> |&nbsp;
+<Link to="/advancedMath">Advanced Mathematics</Link> |&nbsp;
+<Link to="/trigonometry">Trigonometry</Link>
