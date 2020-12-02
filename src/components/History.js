@@ -2,14 +2,17 @@ import React,{Component} from 'react';
 import { Link } from 'react-router-dom';
 import Layout from './Layout';
 
-function History(){
+function History() {
+
   return(
+
     <div className='container'>
     <Layout />
     <hr/>
+
     <h3>History</h3>
       <p className='specificP'><img src="../images/Rhind_Mathematical_Papyrus.jpg"
-           style={{maxWidth:'350px',width:'100%',padding:'5px'}}
+           style={{maxWidth:'325px',width:'100%',padding:'5px'}}
            className="historyImg"/>
       The Rhind Mathematical Papyrus, from around 1550 BC, has Egyptian fraction
       expansions of different forms for prime and composite numbers.
@@ -57,7 +60,8 @@ function History(){
       </p>
 
       <em> Source: <a href="https://en.wikipedia.org/wiki/Prime_number"
-                      target="_blank"> Wikipedia
+                      target="_blank"
+                      style={{color:'rgba(0,0,255,0.6)'}}> Wikipedia
                    </a>
       </em>
     </div>

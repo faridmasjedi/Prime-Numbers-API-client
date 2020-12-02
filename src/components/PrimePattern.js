@@ -26,39 +26,41 @@ function PrimePattern() {
           Mersenne numbers</a>.
         </p>
         <hr/>
+
         <h4>My Theory</h4>
         <p className='specificP'>The idea comes from looking at the difference between
         primes.
         </p>
         <pre>
           <code>
-            2 <span className='diff'>+ 1</span> = 3 &rarr;
-            3 <span className='diff'>+ 2</span> = 5 &rarr;
-            5 <span className='diff'>+ 2</span> = 7 &rarr;
-            7 <span className='diff'>+ 4</span> = 11 &rarr;
-            11 <span className='diff'>+ 2</span> = 13 &rarr;
-            13 <span className='diff'>+ 4</span> = 17 &rarr;
-            17 <span className='diff'>+ 2</span> = 19 &rarr;
-            19 <span className='diff'>+ 4</span> = 23 &rarr;
-            23 <span className='diff'>+ 6</span> = 29 &rarr;
-            29 <span className='diff'>+ 2</span> = 31 &rarr;
-            31 <span className='diff'>+ 6</span> = 37 &rarr;
-            37 <span className='diff'>+ 4</span> = 41 &rarr;
-            41 <span className='diff'>+ 2</span> = 43 &rarr;
-            43 <span className='diff'>+ 4</span> = 47 &rarr;
-            47 <span className='diff'>+ 6</span> = 53 &rarr;
-            53 <span className='diff'>+ 6</span> = 59 &rarr;
-            59 <span className='diff'>+ 2</span> = 61 &rarr;
-            61 <span className='diff'>+ 6</span> = 67 &rarr;
-            67 <span className='diff'>+ 4</span> = 71 &rarr;
-            71 <span className='diff'>+ 2</span> = 73 &rarr;
-            73 <span className='diff'>+ 6</span> = 79 &rarr;
-            79 <span className='diff'>+ 4</span> = 83 &rarr;
-            83 <span className='diff'>+ 6</span> = 89 &rarr;
-            89 <span className='diff'>+ 8</span> = 97 &rarr;
+            2 <span className='diff'>+ 1</span> = 3 &rarr;&nbsp;
+            3 <span className='diff'>+ 2</span> = 5 &rarr;&nbsp;
+            5 <span className='diff'>+ 2</span> = 7 &rarr;&nbsp;
+            7 <span className='diff'>+ 4</span> = 11 &rarr;&nbsp;
+            11 <span className='diff'>+ 2</span> = 13 &rarr;&nbsp;
+            13 <span className='diff'>+ 4</span> = 17 &rarr;&nbsp;
+            17 <span className='diff'>+ 2</span> = 19 &rarr;&nbsp;
+            19 <span className='diff'>+ 4</span> = 23 &rarr;&nbsp;
+            23 <span className='diff'>+ 6</span> = 29 &rarr;&nbsp;
+            29 <span className='diff'>+ 2</span> = 31 &rarr;&nbsp;
+            31 <span className='diff'>+ 6</span> = 37 &rarr;&nbsp;
+            37 <span className='diff'>+ 4</span> = 41 &rarr;&nbsp;
+            41 <span className='diff'>+ 2</span> = 43 &rarr;&nbsp;
+            43 <span className='diff'>+ 4</span> = 47 &rarr;&nbsp;
+            47 <span className='diff'>+ 6</span> = 53 &rarr;&nbsp;
+            53 <span className='diff'>+ 6</span> = 59 &rarr;&nbsp;
+            59 <span className='diff'>+ 2</span> = 61 &rarr;&nbsp;
+            61 <span className='diff'>+ 6</span> = 67 &rarr;&nbsp;
+            67 <span className='diff'>+ 4</span> = 71 &rarr;&nbsp;
+            71 <span className='diff'>+ 2</span> = 73 &rarr;&nbsp;
+            73 <span className='diff'>+ 6</span> = 79 &rarr;&nbsp;
+            79 <span className='diff'>+ 4</span> = 83 &rarr;&nbsp;
+            83 <span className='diff'>+ 6</span> = 89 &rarr;&nbsp;
+            89 <span className='diff'>+ 8</span> = 97 &rarr;&nbsp;
             ...
           </code>
         </pre>
+
         <p className='specificP'>If number 2 and 3 are put aside, there is an
           amazing relationship between the Primes up to number 23.At the first step,
           the Prime number added by two, and then the obtained number are added by four.
@@ -68,39 +70,40 @@ function PrimePattern() {
           to add +2 and then add +4 to the result and keep going. Lets name it ( +2,+4 )
           sequence.
         </p>
+
         <pre>
           <code>
-          5 <span className='diff'>+ 2</span> = 7 &rarr;
-          7 <span className='diff'>+ 4</span> = 11 &rarr;
-          11 <span className='diff'>+ 2</span> = 13 &rarr;
-          13 <span className='diff'>+ 4</span> = 17 &rarr;
-          17 <span className='diff'>+ 2</span> = 19 &rarr;
-          19 <span className='diff'>+ 4</span> = 23 &rarr;
-          23 <span className='diff'>+ 2</span> = <span className='not-prime'>25</span> &rarr;
-          25 <span className='diff'>+ 4</span> = 29 &rarr;
-          29 <span className='diff'>+ 2</span> = 31 &rarr;
-          31 <span className='diff'>+ 4</span> = <span className='not-prime'>35</span> &rarr;
-          35 <span className='diff'>+ 2</span> = 37 &rarr;
-          37 <span className='diff'>+ 4</span> = 41 &rarr;
-          41 <span className='diff'>+ 2</span> = 43 &rarr;
-          43 <span className='diff'>+ 4</span> = 47 &rarr;
-          47 <span className='diff'>+ 2</span> = <span className='not-prime'>49</span> &rarr;
-          49 <span className='diff'>+ 4</span> = 53 &rarr;
-          53 <span className='diff'>+ 2</span> = <span className='not-prime'>55</span> &rarr;
-          55 <span className='diff'>+ 4</span> = 59 &rarr;
-          59 <span className='diff'>+ 2</span> = 61 &rarr;
-          61 <span className='diff'>+ 4</span> = <span className='not-prime'>65</span> &rarr;
-          65 <span className='diff'>+ 2</span> = 67 &rarr;
-          67 <span className='diff'>+ 4</span> = 71 &rarr;
-          71 <span className='diff'>+ 2</span> = 73 &rarr;
-          73 <span className='diff'>+ 4</span> = <span className='not-prime'>77</span> &rarr;
-          77 <span className='diff'>+ 2</span> = 79 &rarr;
-          79 <span className='diff'>+ 4</span> = 83 &rarr;
-          83 <span className='diff'>+ 2</span> = <span className='not-prime'>85</span> &rarr;
-          85 <span className='diff'>+ 4</span> = 89 &rarr;
-          89 <span className='diff'>+ 2</span> = <span className='not-prime'>91</span> &rarr;
-          91 <span className='diff'>+ 4</span> = <span className='not-prime'>95</span> &rarr;
-          95 <span className='diff'>+ 2</span> = 97 &rarr;
+          5 <span className='diff'>+ 2</span> = 7 &rarr;&nbsp;
+          7 <span className='diff'>+ 4</span> = 11 &rarr;&nbsp;
+          11 <span className='diff'>+ 2</span> = 13 &rarr;&nbsp;
+          13 <span className='diff'>+ 4</span> = 17 &rarr;&nbsp;
+          17 <span className='diff'>+ 2</span> = 19 &rarr;&nbsp;
+          19 <span className='diff'>+ 4</span> = 23 &rarr;&nbsp;
+          23 <span className='diff'>+ 2</span> = <span className='not-prime'>25</span> &rarr;&nbsp;
+          25 <span className='diff'>+ 4</span> = 29 &rarr;&nbsp;
+          29 <span className='diff'>+ 2</span> = 31 &rarr;&nbsp;
+          31 <span className='diff'>+ 4</span> = <span className='not-prime'>35</span> &rarr;&nbsp;
+          35 <span className='diff'>+ 2</span> = 37 &rarr;&nbsp;
+          37 <span className='diff'>+ 4</span> = 41 &rarr;&nbsp;
+          41 <span className='diff'>+ 2</span> = 43 &rarr;&nbsp;
+          43 <span className='diff'>+ 4</span> = 47 &rarr;&nbsp;
+          47 <span className='diff'>+ 2</span> = <span className='not-prime'>49</span> &rarr;&nbsp;
+          49 <span className='diff'>+ 4</span> = 53 &rarr;&nbsp;
+          53 <span className='diff'>+ 2</span> = <span className='not-prime'>55</span> &rarr;&nbsp;
+          55 <span className='diff'>+ 4</span> = 59 &rarr;&nbsp;
+          59 <span className='diff'>+ 2</span> = 61 &rarr;&nbsp;
+          61 <span className='diff'>+ 4</span> = <span className='not-prime'>65</span> &rarr;&nbsp;
+          65 <span className='diff'>+ 2</span> = 67 &rarr;&nbsp;
+          67 <span className='diff'>+ 4</span> = 71 &rarr;&nbsp;
+          71 <span className='diff'>+ 2</span> = 73 &rarr;&nbsp;
+          73 <span className='diff'>+ 4</span> = <span className='not-prime'>77</span> &rarr;&nbsp;
+          77 <span className='diff'>+ 2</span> = 79 &rarr;&nbsp;
+          79 <span className='diff'>+ 4</span> = 83 &rarr;&nbsp;
+          83 <span className='diff'>+ 2</span> = <span className='not-prime'>85</span> &rarr;&nbsp;
+          85 <span className='diff'>+ 4</span> = 89 &rarr;&nbsp;
+          89 <span className='diff'>+ 2</span> = <span className='not-prime'>91</span> &rarr;&nbsp;
+          91 <span className='diff'>+ 4</span> = <span className='not-prime'>95</span> &rarr;&nbsp;
+          95 <span className='diff'>+ 2</span> = 97 &rarr;&nbsp;
           ...
           </code>
         </pre>
@@ -143,6 +146,7 @@ function PrimePattern() {
           extra numbers which these two patterns generate. And by extra numbers, i mean the
           not primes ones.
         </p>
+
         <pre>
           <code>
             <span className='not-prime'>25</span> &rarr; 5 * 5 <br/>
@@ -157,287 +161,289 @@ function PrimePattern() {
             ...
           </code>
         </pre>
+
         <p className='specificP'>
           It seems that all the extra numbers generated of multiplying each one them
           together.
         </p>
+
         <pre>
           <code>
-          <table style={{height: "441px",width:"671"}}>
+          <table className='table'>
           <tbody>
           <tr>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>Extra Numbers</p>
           </td>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>5</p>
           </td>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>7</p>
           </td>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>11</p>
           </td>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>13</p>
           </td>
-          <td style={{width: "90px",background:'#ccc'}}>
+          <td className='td90-color'>
           <p>17</p>
           </td>
-          <td style={{width: "90px",background:'#ccc'}}>
+          <td className='td90-color'>
           <p>19</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>5</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>25</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>35</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>55</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>65</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>85</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>95</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>7</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>35</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>49</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>77</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>91</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>119</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>133</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>11</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>55</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>77</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>121</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>143</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>187</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>209</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>13</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>65</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>91</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>143</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>169</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>221</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>247</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>17</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>85</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>119</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>187</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>221</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>289</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>323</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>19</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>95</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>133</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>209</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>247</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>323</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>361</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>23</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>115</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>161</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>253</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>299</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>391</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>437</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>25</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>125</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>175</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>275</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>325</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>425</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>475</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>29</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>145</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>203</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>319</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>377</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>493</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>551</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>31</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>155</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>217</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>341</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>403</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>527</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>589</p>
           </td>
           </tr>
           <tr>
-          <td style={{width: "89px",background:'#ccc'}}>
+          <td className='td89-color'>
           <p>35</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>175</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>245</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>385</p>
           </td>
-          <td style={{width: "89px"}}>
+          <td className='td89'>
           <p>455</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>595</p>
           </td>
-          <td style={{width: "90px"}}>
+          <td className='td90'>
           <p>665</p>
           </td>
           </tr>
@@ -453,6 +459,7 @@ function PrimePattern() {
         relationship between the indexes results in the extra indexes. By writing all the
         scenarios, the patterns is going to be like the below equation:
       </p>
+
       <pre>
         <code>
           <span className='not-prime'>a(n) = 5 + 3n+ ((-1)<sup>n</sup> - 1)/<sub>2</sub> <br/><br/></span>
@@ -463,14 +470,15 @@ function PrimePattern() {
           4: if n: odd &rarr; (n-1)/<sub>2</sub> -5k -3 &#8800; 0 (mod 6k + 5 )<br/>
         </code>
       </pre>
+
       <p className='specificP'>
-        This is the basic achievement. I have done many deeper stages to make the conditions
-        more simpler. If you want, you can email me: <span className='diff'>farid.masjedi1985@gmail.com</span>
+        This is the basic achievement. For more deeper stages to how make the conditions
+        more simpler, email me: <span className='diff'>farid.masjedi1985@gmail.com</span>
       </p>
+
     </div>
 
   )
-
 
 }
 
