@@ -13,12 +13,12 @@ myself using express.
 * Making better css using Bootstrap.
 
 ## Link to this app
-#### [https://prime-numbers-api-client.surge.sh/#/](https://prime-numbers-api-client.surge.sh/#/)
+#### [https://prime-numbers-api-client.surge.sh/#/](https://prime-numbers-api-client.surge.sh/#/){:target="_blank"}
 
 
 
 ## Link to a back-end application
-#### [https://prime-numbers-api-server.herokuapp.com/](https://prime-numbers-api-server.herokuapp.com/)
+#### [https://prime-numbers-api-server.herokuapp.com/](https://prime-numbers-api-server.herokuapp.com/){:target="_blank"}
 
 ## Steps to make the server
 
