@@ -66,7 +66,7 @@ const path = require("path");module.exports = {
     compress: true,
     historyApiFallback: true
   }
-};
+};```
 
 ## Deploying on surge
 * for deploying on surge, as we use webpack, there are some steps to make the surge website works:
