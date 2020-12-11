@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///Users/imac/Desktop/Projects/Projects/Project0/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Tick-Tak-Toe_files/style.css">
+
+    <title>Tick-Tak-Toe</title>
+    <script src="./Tick-Tak-Toe_files/jquery.min.js"></script>
+    <script src="./Tick-Tak-Toe_files/DOM(MB).js"></script>
+    <script src="./Tick-Tak-Toe_files/Gamejs(MB).js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Tic-Tac-Toe</h1>
+    </header>
+
+    <div id="container1" style="display: none;">
+      <div id="play">
+        <button id="VSplayer2">Player1 Vs. Player2 </button>
+      </div>
+    </div>
+
+    <div id="container2" style="display: none;">
+      <div class="name" id="firstPlayer" style="background-color: rgb(149, 151, 153);">
+        <h2>First Player<br><br>s</h2>
+        <input class="name" placeholder="enter your name" style="display: none;">
+      <div class="cellDemo" id="X" style="background-color: rgb(204, 204, 204);">X</div></div>
+
+      <div class="name" id="secondPlayer">
+        <h2>Second Player<br><br> ss</h2>
+        <input class="name" placeholder="enter your name" style="display: none;">
+      <div class="cellDemo" id="O">O</div></div>
+
+
+      <div class="name" id="whoIsFirstPlayer">
+
+        <h2 id="comment" style="">s, Choose a sign</h2>
+
+        <div id="signChoose" style="display: block;">
+          <div class="cellDemo" id="X" style="background-color: rgb(204, 204, 204);">X</div>
+          <div class="cellDemo" id="O">O</div>
+        </div>
+        <button id="submit" style="display: none;">Submit</button>
+      </div>
+
+    </div>
+
+    <div id="container3" style="display: block;">
+      <div id="player-name-result">
+        <button id="result2" style="display: inline-block;">0</button>
+        <div class="name" id="firstPlayer" style="background-color: rgb(149, 151, 153);">
+          <h2>First Player<br><br>s</h2>
+        <div class="cellDemo" id="X" style="background-color: rgb(204, 204, 204);">X</div></div>
+      </div>
+
+      <div id="round" style="display: none;">
+          <h2 class="round-number" id="comment">How many rouds do you like to play</h2>
+          <input class="round-number" placeholder="round number">
+          <button id="rounds">Submit</button>
+      </div>
+
+      <div id="matrix" style="">
+        <div class="rows" id="row1">
+          <div class="cell" id="cell1" style="display: none;"></div>
+          <div class="cell" id="cell2" style="display: none;"></div>
+          <div class="cell" id="cell3" style="display: none;"></div>
+        </div>
+
+        <div class="rows" id="row2">
+          <div class="cell" id="cell4" style="display: none;"></div>
+          <div class="cell" id="cell5" style=""></div>
+          <div class="cell" id="cell6" style="display: none;"></div>
+        </div>
+
+        <div class="rows" id="row3">
+          <div class="cell" id="cell7" style="display: none;"></div>
+          <div class="cell" id="cell8" style=""></div>
+          <div class="cell" id="cell9" style=""></div>
+        </div>
+
+      </div>
+
+      <div id="player-name-result">
+        <button id="result1" style="display: inline-block;">0</button>
+
+        <div class="name" id="secondPlayer" style="">
+          <h2>Second Player<br><br> ss</h2>
+        <div class="cellDemo" id="O">O</div></div>
+      </div>
+
+      <div id="gameComment" style="display: block;"></div>
+      <button id="render" style="display: none;">Play Again?</button>
+
+  
+
+</div></body></html>

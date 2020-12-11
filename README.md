@@ -1,6 +1,6 @@
 # Prime-Numbers-API-client
 
-This is a front-end web application made by using webpack. The application gives results about prime numbers. It is connected to a front-end api made by express.
+This is a front-end web application made by using webpack. The application gives results about prime numbers. It is connected to a back-end api made by express.
 
 ## About this project
 Making a front-end application using webpack, react, react-dom, react-router-dom, babel to show some results about prime numbers using an api which made by
